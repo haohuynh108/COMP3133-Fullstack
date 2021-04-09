@@ -1,0 +1,22 @@
+<h1>Space Mission</h1>
+<div class = "content" [style.background-color]="'lightblue'">
+    <div *ngFor= "let mission of missions">
+        <div [ngStyle]="{'color': 'blue', margin: '8px', padding: '8px'}">
+            <h2>
+            Name: {{mission.mission_name}}
+        </h2>
+        <h2>
+            Launch_Year: {{mission.launch_year}}
+        </h2> 
+        <h2>
+            Details: {{mission.details}}
+        </h2>  
+        <h2>
+            Patch: {{mission.mission_patch_small}}
+        </h2>
+        <p>
+        <img mat-card-image src="{{mission.links.mission_patch_small}}" alt="mission img">
+        </p>
+</div>
+</div>
+</div>
